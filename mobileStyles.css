@@ -1,0 +1,157 @@
+@media (max-width: 376px) {
+  html {
+    display: inline;
+  }
+  h3 {
+    text-transform: none;
+    font-weight: 600;
+  }
+  .main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .navigate {
+    gap: 50px;
+  }
+
+  .info {
+    grid-template-columns: none;
+    gap: 0px;
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .description__nutrition {
+    margin: 0px;
+  }
+
+  #nav-list li a::after {
+    width: 93px;
+  }
+
+  .block__feedback {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .feedback-text {
+    width: 334px;
+    text-align: justify;
+    padding: 0;
+  }
+
+  .button__feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  .block__image {
+    padding: 0;
+    width: 336px;
+  }
+
+  .image {
+    width: 336px;
+    height: 295px;
+  }
+
+  .description__text--default {
+    display: none;
+  }
+  .description__text--mobile {
+    display: block;
+  }
+
+  .button__info {
+    border-color: #043e44;
+    color: #043e44;
+  }
+
+  .card {
+    width: 288px;
+    height: 190px;
+    display: flex;
+    padding-top: 15px;
+  }
+
+  .image-section {
+    width: 100px;
+    height: 94px;
+    top: 19px;
+  }
+
+  .favorite {
+    display: none;
+  }
+
+  .product__catalog {
+    overflow-x: auto;
+  }
+
+  .stars {
+    display: none;
+  }
+
+  .setting-cards {
+    padding-left: 10px;
+  }
+
+  .number-container {
+    justify-content: end;
+  }
+  .title {
+    font-size: 15px;
+  }
+
+  .subtitle {
+    font-size: 11px;
+  }
+
+  .main-number {
+    font-size: 18px;
+  }
+  .fraction {
+    font-size: 13px;
+  }
+
+  .cart-button {
+    display: none;
+  }
+
+  .button-mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 0.7px solid #dedede;
+    cursor: pointer;
+  }
+
+  .button-mobile .text_mobile-button {
+    color: green;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .icon-mobile {
+    width: 20px;
+    height: 20px;
+  }
+
+  .block_button-mobile {
+    padding-top: 14px;
+  }
+
+  .product-image {
+    border-radius: 8px;
+  }
+
+  .buttons-container {
+    margin: 34px 0 0 0;
+  }
+}

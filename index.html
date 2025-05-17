@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Документ</title>
+    <!-- Подключение внешних стилей и шрифтов -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobileStyles.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="main" id="content">
+      <!-- Навигация -->
+      <nav>
+        <ul class="navigate" id="nav-list">
+          <li><a class="navigation__link" href="#description">Описание</a></li>
+          <li><a class="navigation__link" href="#feedback">Отзывы</a></li>
+          <li><a class="navigation__link" href="#question">Откуда?</a></li>
+        </ul>
+      </nav>
+
+      <!-- Основной контент -->
+      <div id="content">
+        <!-- Описание товара -->
+        <section id="description" class="tab-content">
+          <div class="description__text--default">
+            <p>
+              Томаты на ветке красные (помидоры) - более плотные, яркие и
+              ароматные по сравнению с обычными. Они славятся низкой
+              калорийностью и высоким содержанием витаминов, клетчатки, пектина
+              и минеральных веществ. В них содержатся также каротиноиды, кислоты
+              и мощный антиоксидант ликопин.
+            </p>
+            <p>
+              Помидор - незаменимый продукт в мировой кулинарии. Он - основа
+              многочисленных соусов, маринадов, кетчупа, испанского холодного
+              супа Гаспачо или итальянской закуски Капрезе. С ним делают салаты,
+              его тушат, солят и консервируют. Помидоры на веточке особенно
+              красиво смотрятся в запеченном виде.
+            </p>
+          </div>
+          <div class="description__text--mobile">
+            <p>
+              Томаты на ветке красные (помидоры) - более плотные, яркие и
+              ароматные по сравнению с обычными.
+            </p>
+            <p>
+              Они славятся низкой калорийностью и высоким содержанием витаминов,
+              клетчатки, пектина и минеральных веществ. В них содержатся также
+              каротиноиды, кислоты и мощный антиоксидант ликопин.
+            </p>
+          </div>
+          <!-- Характеристики и ценность -->
+          <section class="info">
+            <!-- Характеристики -->
+            <div>
+              <h3>Характеристики</h3>
+              <ul class="description__characteristics">
+                <li>Страна <span>Россия</span></li>
+                <li>Поставщик <span>Фермеры: Наталья и Юрий Лейшан</span></li>
+                <li>Тип упаковки <span>Крафтовый пакет</span></li>
+                <li>Сертификаты качества <span>В наличии</span></li>
+              </ul>
+            </div>
+            <!-- Пищевая ценность -->
+            <div class="description__nutrition">
+              <h3>Пищевая ценность на 100г</h3>
+              <ul class="description__characteristics">
+                <li>Энергетическая ценность <span>18 кКал</span></li>
+                <li>Белки <span>0.9 г</span></li>
+                <li>Жиры <span>0.2 г</span></li>
+                <li>Углеводы <span>3.9 г</span></li>
+              </ul>
+            </div>
+            <!-- Условия хранения -->
+            <div>
+              <h3>Условия хранения</h3>
+              <ul class="description__characteristics">
+                <li>Срок хранения <span>7 дней</span></li>
+                <li>Температура хранения <span>от 3° до 7°</span></li>
+              </ul>
+            </div>
+          </section>
+          <!-- Рекомендуемые товары -->
+          <h2>С этим товаром покупают</h2>
+          <section class="product__catalog">
+            <template class="cards-container" id="product-card-template">
+              <div class="card">
+                <div class="image-section">
+                  <img alt="картинка карточки" class="product-image" />
+                  <div class="favorite" title="Добавить в избранное">
+                    <img src="./img/Vector.svg" alt="Кнопка избранное" />
+                  </div>
+                </div>
+                <div class="setting-cards">
+                  <div class="title"></div>
+                  <div class="subtitle"></div>
+                  <div class="number-container">
+                    <div class="main-number"></div>
+                    <span class="fraction"></span>
+                  </div>
+                  <div class="stars"></div>
+                  <div class="cart-button">
+                    <button class="cart" title="Добавить в корзину">
+                      <img
+                        src="./img/shopping-cart.svg"
+                        alt="Иконка корзинки"
+                      />
+                    </button>
+                  </div>
+                  <div class="block_button-mobile">
+                    <button class="button-mobile">
+                      <span class="text_mobile-button">В корзину</span>
+                      <img
+                        src="./img/basket-mobile.svg"
+                        alt="Иконка корзинки"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </section>
+        </section>
+
+        <!-- Отзывы -->
+        <section id="feedback" class="tab-content visibility">
+          <p class="feedback-text">
+            Помогите нам стать ещё лучше. Оставляя отзывы, вы таким образом
+            указываете нам на зоны роста. Мы правда, читаем все отзывы.
+          </p>
+          <div class="button__feedback-container">
+            <button class="button__feedback button">Оставить отзыв</button>
+          </div>
+        </section>
+
+        <!-- Откуда? -->
+        <section id="question" class="tab-content visibility">
+          <div class="info">
+            <article>
+              <div class="description__text--default">
+                <p>
+                  Томаты на ветке красные (помидоры) - более плотные, яркие и
+                  ароматные по сравнению с обычными. Они славятся низкой
+                  калорийностью и высоким содержанием витаминов, клетчатки,
+                  пектина и минеральных веществ. В них содержатся также
+                  каротиноиды, кислоты и мощный антиоксидант ликопин.
+                </p>
+                <p>
+                  Помидор - незаменимый продукт в мировой кулинарии. Он - основа
+                  многочисленных соусов, маринадов, кетчупа, испанского
+                  холодного супа Гаспачо или итальянской закуски Капрезе.
+                </p>
+              </div>
+              <div class="description__text--mobile">
+                <p>
+                  Томаты на ветке красные (помидоры) - более плотные, яркие и
+                  ароматные по сравнению с обычными.
+                </p>
+                <p>
+                  Они славятся низкой калорийностью и высоким содержанием
+                  витаминов, клетчатки, пектина и минеральных веществ. В них
+                  содержатся также каротиноиды, кислоты и мощный антиоксидант
+                  ликопин.
+                </p>
+              </div>
+              <h3 class="description__text--mobile">Наталья и Юрий Лейшан</h3>
+            </article>
+            <div class="block__image">
+              <img class="image" src="./img/hunter.png" alt="" />
+              <div class="buttons-container">
+                <button class="button button__info">Сертификаты</button>
+                <button class="button button__info">О поставщике</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
